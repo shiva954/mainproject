@@ -1,0 +1,465 @@
+/* MeetingScheduler.css - Updated sizes */
+/* .scheduler-container {
+  max-width: 900px;
+  height: fit-content;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.scheduler-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.scheduler-header h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.new-meeting-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.new-meeting-btn:hover {
+  background-color: #2980b9;
+}
+
+.meeting-form-container {
+  background-color: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.meeting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+}
+
+.schedule-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.schedule-btn:hover {
+  background-color: #218838;
+}
+
+.meetings-list {
+  margin-top: 1.5rem;
+}
+
+.meetings-list h3 {
+  color: #333;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 1.3rem;
+}
+
+.no-meetings {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meeting-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.meeting-card {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meeting-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.meeting-card-header {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meeting-card-header h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.meeting-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.join-meeting-btn,
+.delete-meeting-btn {
+  border: none;
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.join-meeting-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.join-meeting-btn:hover {
+  background-color: #218838;
+}
+
+.delete-meeting-btn {
+  background-color: #dc3545;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.delete-meeting-btn:hover {
+  background-color: #c82333;
+}
+
+.meeting-details {
+  padding: 0.8rem;
+}
+
+.meeting-details p {
+  margin: 0.4rem 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .scheduler-container {
+    padding: 0.8rem;
+    margin: 0.8rem;
+  }
+  
+  .meeting-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .scheduler-header h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .scheduler-container {
+    padding: 0.6rem;
+    margin: 0.6rem;
+  }
+  
+  .meeting-form-container {
+    padding: 0.8rem;
+  }
+  
+  .form-group {
+    min-width: 100%;
+  }
+  
+  .scheduler-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .new-meeting-btn {
+    width: 100%;
+  }
+}
+
+ */
+
+/* MeetingsPage.css */
+
+.scheduler-container {
+min-height: 100vh;
+ /* max-height: auto; */
+  width: 100%;
+  
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333;
+  background-color:#7c95af;
+}
+
+.scheduler-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.scheduler-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.new-meeting-btn {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.new-meeting-btn:hover {
+  background-color: #3a56d4;
+}
+
+/* Meeting Form Styles */
+.meeting-form {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.meeting-form input,
+.meeting-form select,
+.meeting-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  width: 100%;
+  background-color: white;
+}
+
+.meeting-form input:focus,
+.meeting-form select:focus,
+.meeting-form textarea:focus {
+  outline: none;
+  border-color: #4361ee;
+  box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.1);
+}
+
+.meeting-form input[name="title"],
+.meeting-form textarea[name="description"] {
+  grid-column: span 2;
+}
+
+.meeting-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.schedule-btn {
+  grid-column: span 2;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #3a56d4;
+}
+
+/* Meetings List Styles */
+.meetings-list {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.meetings-list h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.meeting-card {
+  padding: 1.2rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meeting-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.meeting-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  flex: 2;
+}
+
+.meeting-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  flex: 2;
+}
+
+.meeting-card button {
+  margin-left: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.meeting-card button:first-of-type {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+}
+
+.meeting-card button:first-of-type:hover {
+  background-color: #3a56d4;
+}
+
+.meeting-card button:last-of-type {
+  background-color: transparent;
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.meeting-card button:last-of-type:hover {
+  background-color: #fff5f5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .scheduler-container {
+    padding: 1rem;
+  }
+  
+  .meeting-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .meeting-form input[name="title"],
+  .meeting-form textarea[name="description"],
+  .schedule-btn {
+    grid-column: span 1;
+  }
+  
+  .meeting-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .meeting-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .meeting-card button {
+    margin: 0.5rem 0.5rem 0 0;
+  }
+}
+
+
+

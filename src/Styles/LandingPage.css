@@ -1,0 +1,208 @@
+/* Reset default margin and padding */
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  
+  background-color: #E9F5F2;
+  overflow: hidden;
+
+ 
+} */
+.landing-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: #E9F5F2;
+  padding: 20px;
+  text-align: center;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.auth-card .ant-card-body {
+
+  padding: 55px;
+}
+/* .ant-card .ant-card-body {
+} */
+
+/* Content Layout */
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  width: 430px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.input-field {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.submit-button, .google-button , .reset-button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-button {
+  background-color: #2D6A4F !important;
+  color: white !important;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #1E5038 !important; 
+  color: white !important;
+}
+
+.reset-button {
+  background-color: #2D6A4F !important;
+  color: white !important;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reset-button:hover {
+  background-color: #1E5038 !important; 
+  color: white !important;
+}
+
+.google-button {
+  background-color: #db4437 !important;
+  color: white !important;
+  border: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.google-button:hover {
+  background-color: #b53020 !important; 
+  color: white !important;
+}
+
+
+
+
+.text-link {
+  color: #2D6A4F;
+  font-size: 1.1rem;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  
+  .landing-container {
+      height: auto;
+      padding: 0;
+  }
+  
+  .content-container {
+    margin-top: 50px;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+  }
+  
+  .logo {
+      width: 200px;
+      margin: 20px 0;
+
+  }
+  
+  .auth-card {
+      width: 90%;
+  }
+  .auth-card .ant-card-body {
+
+    padding: 45px;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+
+  
+  .auth-card {
+      padding: 10px;
+  }
+  
+  .input-field {
+      font-size: 14px;
+  }
+  .auth-card .ant-card-body {
+
+  padding: 20px;
+}
+  .content-container{
+    margin-top: 40px;
+  margin-bottom: 10px;
+  }
+  .logo{
+    margin-top: 20px;
+  }
+
+}

@@ -1,0 +1,107 @@
+/* Layout.css */
+ .layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+} 
+
+/* Header styles */
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 0 20px;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-lefts {
+  display: flex;
+  align-items: center;
+}
+
+.header-lefts h1 {
+  margin-top: 14px;
+  margin-left: 15px;
+  font-size: 1.8rem;
+}
+
+.menu-toggles {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+} 
+
+/* Main container with sidebar and content */
+ .main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+} 
+
+/* Sidebar styles */
+ .sidebar {
+  background-color: #2c3e50;
+  color: white;
+  width: 250px;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar.closed {
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar nav {
+  padding: 20px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 25px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #2c3e50;
+} 
+
+/* Main content area */
+ .content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+} 
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    height: calc(100% - 60px);
+    z-index: 10;
+  }
+  
+  .sidebar.open {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+} 
